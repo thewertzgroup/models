@@ -1,0 +1,109 @@
+/opt/cloudera/parcels/Anaconda/lib/python2.7/site-packages/h5py/__init__.py:34: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+2018-10-19 22:20:32.289530: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+2018-10-19 22:20:32.433084: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:964] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2018-10-19 22:20:32.434333: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1411] Found device 0 with properties: 
+name: Tesla K80 major: 3 minor: 7 memoryClockRate(GHz): 0.8235
+pciBusID: 0000:00:1b.0
+totalMemory: 11.17GiB freeMemory: 11.10GiB
+2018-10-19 22:20:32.556338: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:964] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2018-10-19 22:20:32.557562: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1411] Found device 1 with properties: 
+name: Tesla K80 major: 3 minor: 7 memoryClockRate(GHz): 0.8235
+pciBusID: 0000:00:1e.0
+totalMemory: 11.17GiB freeMemory: 11.10GiB
+2018-10-19 22:20:32.557964: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1490] Adding visible gpu devices: 0, 1
+2018-10-19 22:20:33.210096: I tensorflow/core/common_runtime/gpu/gpu_device.cc:971] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-10-19 22:20:33.210143: I tensorflow/core/common_runtime/gpu/gpu_device.cc:977]      0 1 
+2018-10-19 22:20:33.210153: I tensorflow/core/common_runtime/gpu/gpu_device.cc:990] 0:   N Y 
+2018-10-19 22:20:33.210158: I tensorflow/core/common_runtime/gpu/gpu_device.cc:990] 1:   Y N 
+2018-10-19 22:20:33.210797: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1103] Created TensorFlow device (/device:GPU:0 with 10756 MB memory) -> physical GPU (device: 0, name: Tesla K80, pci bus id: 0000:00:1b.0, compute capability: 3.7)
+2018-10-19 22:20:33.325648: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1103] Created TensorFlow device (/device:GPU:1 with 10756 MB memory) -> physical GPU (device: 1, name: Tesla K80, pci bus id: 0000:00:1e.0, compute capability: 3.7)
+WARNING:tensorflow:From cifar10_main.py:380: __init__ (from tensorflow.contrib.learn.python.learn.estimators.run_config) is deprecated and will be removed in a future version.
+Instructions for updating:
+When switching to tf.estimator.Estimator, use tf.estimator.RunConfig instead.
+WARNING:tensorflow:From cifar10_main.py:387: run (from tensorflow.contrib.learn.python.learn.learn_runner) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.estimator.train_and_evaluate.
+INFO:tensorflow:Using config: {'_save_checkpoints_secs': 600, '_keep_checkpoint_max': 5, '_task_type': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0x7f6bc068c310>, '_keep_checkpoint_every_n_hours': 10000, '_session_config': gpu_options {
+  force_gpu_compatible: true
+}
+allow_soft_placement: true
+, '_tf_random_seed': None, '_device_fn': None, '_num_worker_replicas': 0, '_task_id': 0, '_log_step_count_steps': 100, '_evaluation_master': '', '_eval_distribute': None, '_num_ps_replicas': 0, '_train_distribute': None, '_is_chief': True, '_model_dir': '/tmp/cifar10_train', '_protocol': None, '_save_checkpoints_steps': None, '_environment': 'local', '_master': '', '_tf_config': gpu_options {
+  per_process_gpu_memory_fraction: 1.0
+}
+, '_save_summary_steps': 100}
+WARNING:tensorflow:From cifar10_main.py:360: __init__ (from tensorflow.contrib.learn.python.learn.experiment) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please switch to tf.estimator.train_and_evaluate. You will also have to convert to a tf.estimator.Estimator.
+WARNING:tensorflow:From /home/cdsw/.local/lib/python2.7/site-packages/tensorflow/contrib/learn/python/learn/monitors.py:279: __init__ (from tensorflow.contrib.learn.python.learn.monitors) is deprecated and will be removed after 2016-12-05.
+Instructions for updating:
+Monitors are deprecated. Please use tf.train.SessionRunHook.
+INFO:tensorflow:Calling model_fn.
+INFO:tensorflow:image after unit resnet/tower_0/stage/residual_v1/: (64, 16, 32, 32)
+INFO:tensorflow:image after unit resnet/tower_0/stage/residual_v1_1/: (64, 16, 32, 32)
+INFO:tensorflow:image after unit resnet/tower_0/stage/residual_v1_2/: (64, 16, 32, 32)
+INFO:tensorflow:image after unit resnet/tower_0/stage/residual_v1_3/: (64, 16, 32, 32)
+INFO:tensorflow:image after unit resnet/tower_0/stage/residual_v1_4/: (64, 16, 32, 32)
+INFO:tensorflow:image after unit resnet/tower_0/stage/residual_v1_5/: (64, 16, 32, 32)
+INFO:tensorflow:image after unit resnet/tower_0/stage/residual_v1_6/: (64, 16, 32, 32)
+INFO:tensorflow:image after unit resnet/tower_0/stage_1/residual_v1/avg_pool/: (64, 16, 16, 16)
+INFO:tensorflow:image after unit resnet/tower_0/stage_1/residual_v1/: (64, 32, 16, 16)
+INFO:tensorflow:image after unit resnet/tower_0/stage_1/residual_v1_1/: (64, 32, 16, 16)
+INFO:tensorflow:image after unit resnet/tower_0/stage_1/residual_v1_2/: (64, 32, 16, 16)
+INFO:tensorflow:image after unit resnet/tower_0/stage_1/residual_v1_3/: (64, 32, 16, 16)
+INFO:tensorflow:image after unit resnet/tower_0/stage_1/residual_v1_4/: (64, 32, 16, 16)
+INFO:tensorflow:image after unit resnet/tower_0/stage_1/residual_v1_5/: (64, 32, 16, 16)
+INFO:tensorflow:image after unit resnet/tower_0/stage_1/residual_v1_6/: (64, 32, 16, 16)
+INFO:tensorflow:image after unit resnet/tower_0/stage_2/residual_v1/avg_pool/: (64, 32, 8, 8)
+INFO:tensorflow:image after unit resnet/tower_0/stage_2/residual_v1/: (64, 64, 8, 8)
+INFO:tensorflow:image after unit resnet/tower_0/stage_2/residual_v1_1/: (64, 64, 8, 8)
+INFO:tensorflow:image after unit resnet/tower_0/stage_2/residual_v1_2/: (64, 64, 8, 8)
+INFO:tensorflow:image after unit resnet/tower_0/stage_2/residual_v1_3/: (64, 64, 8, 8)
+INFO:tensorflow:image after unit resnet/tower_0/stage_2/residual_v1_4/: (64, 64, 8, 8)
+INFO:tensorflow:image after unit resnet/tower_0/stage_2/residual_v1_5/: (64, 64, 8, 8)
+INFO:tensorflow:image after unit resnet/tower_0/stage_2/residual_v1_6/: (64, 64, 8, 8)
+INFO:tensorflow:image after unit resnet/tower_0/global_avg_pool/: (64, 64)
+INFO:tensorflow:image after unit resnet/tower_0/fully_connected/: (64, 11)
+INFO:tensorflow:image after unit resnet_1/tower_1/stage/residual_v1/: (64, 16, 32, 32)
+INFO:tensorflow:image after unit resnet_1/tower_1/stage/residual_v1_1/: (64, 16, 32, 32)
+INFO:tensorflow:image after unit resnet_1/tower_1/stage/residual_v1_2/: (64, 16, 32, 32)
+INFO:tensorflow:image after unit resnet_1/tower_1/stage/residual_v1_3/: (64, 16, 32, 32)
+INFO:tensorflow:image after unit resnet_1/tower_1/stage/residual_v1_4/: (64, 16, 32, 32)
+INFO:tensorflow:image after unit resnet_1/tower_1/stage/residual_v1_5/: (64, 16, 32, 32)
+INFO:tensorflow:image after unit resnet_1/tower_1/stage/residual_v1_6/: (64, 16, 32, 32)
+INFO:tensorflow:image after unit resnet_1/tower_1/stage_1/residual_v1/avg_pool/: (64, 16, 16, 16)
+INFO:tensorflow:image after unit resnet_1/tower_1/stage_1/residual_v1/: (64, 32, 16, 16)
+INFO:tensorflow:image after unit resnet_1/tower_1/stage_1/residual_v1_1/: (64, 32, 16, 16)
+INFO:tensorflow:image after unit resnet_1/tower_1/stage_1/residual_v1_2/: (64, 32, 16, 16)
+INFO:tensorflow:image after unit resnet_1/tower_1/stage_1/residual_v1_3/: (64, 32, 16, 16)
+INFO:tensorflow:image after unit resnet_1/tower_1/stage_1/residual_v1_4/: (64, 32, 16, 16)
+INFO:tensorflow:image after unit resnet_1/tower_1/stage_1/residual_v1_5/: (64, 32, 16, 16)
+INFO:tensorflow:image after unit resnet_1/tower_1/stage_1/residual_v1_6/: (64, 32, 16, 16)
+INFO:tensorflow:image after unit resnet_1/tower_1/stage_2/residual_v1/avg_pool/: (64, 32, 8, 8)
+INFO:tensorflow:image after unit resnet_1/tower_1/stage_2/residual_v1/: (64, 64, 8, 8)
+INFO:tensorflow:image after unit resnet_1/tower_1/stage_2/residual_v1_1/: (64, 64, 8, 8)
+INFO:tensorflow:image after unit resnet_1/tower_1/stage_2/residual_v1_2/: (64, 64, 8, 8)
+INFO:tensorflow:image after unit resnet_1/tower_1/stage_2/residual_v1_3/: (64, 64, 8, 8)
+INFO:tensorflow:image after unit resnet_1/tower_1/stage_2/residual_v1_4/: (64, 64, 8, 8)
+INFO:tensorflow:image after unit resnet_1/tower_1/stage_2/residual_v1_5/: (64, 64, 8, 8)
+INFO:tensorflow:image after unit resnet_1/tower_1/stage_2/residual_v1_6/: (64, 64, 8, 8)
+INFO:tensorflow:image after unit resnet_1/tower_1/global_avg_pool/: (64, 64)
+INFO:tensorflow:image after unit resnet_1/tower_1/fully_connected/: (64, 11)
+INFO:tensorflow:Done calling model_fn.
+INFO:tensorflow:Create CheckpointSaverHook.
+INFO:tensorflow:Graph was finalized.
+2018-10-19 22:20:42.478112: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1490] Adding visible gpu devices: 0, 1
+2018-10-19 22:20:42.478202: I tensorflow/core/common_runtime/gpu/gpu_device.cc:971] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-10-19 22:20:42.478214: I tensorflow/core/common_runtime/gpu/gpu_device.cc:977]      0 1 
+2018-10-19 22:20:42.478221: I tensorflow/core/common_runtime/gpu/gpu_device.cc:990] 0:   N Y 
+2018-10-19 22:20:42.478227: I tensorflow/core/common_runtime/gpu/gpu_device.cc:990] 1:   Y N 
+2018-10-19 22:20:42.478561: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1103] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 10756 MB memory) -> physical GPU (device: 0, name: Tesla K80, pci bus id: 0000:00:1b.0, compute capability: 3.7)
+2018-10-19 22:20:42.478760: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1103] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:1 with 10756 MB memory) -> physical GPU (device: 1, name: Tesla K80, pci bus id: 0000:00:1e.0, compute capability: 3.7)
+INFO:tensorflow:Restoring parameters from /tmp/cifar10_train/model.ckpt-0
+INFO:tensorflow:Running local_init_op.
+INFO:tensorflow:Done running local_init_op.
+INFO:tensorflow:Saving checkpoints for 0 into /tmp/cifar10_train/model.ckpt.
+2018-10-19 22:20:53.751686: E tensorflow/stream_executor/cuda/cuda_dnn.cc:353] Could not create cudnn handle: CUDNN_STATUS_NOT_INITIALIZED
+2018-10-19 22:20:53.751809: E tensorflow/stream_executor/cuda/cuda_dnn.cc:361] Possibly insufficient driver version: 384.66.0
+2018-10-19 22:20:53.751872: E tensorflow/stream_executor/cuda/cuda_dnn.cc:353] Could not create cudnn handle: CUDNN_STATUS_NOT_INITIALIZED
+2018-10-19 22:20:53.751966: E tensorflow/stream_executor/cuda/cuda_dnn.cc:361] Possibly insufficient driver version: 384.66.0
